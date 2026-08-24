@@ -1,0 +1,351 @@
+/*
+ * Gustavo Rodolfo Leite dos Reis
+ * RU: 5605886
+ * Curriculum Vitae - HTML5, CSS3 e JavaScript
+ */
+
+/* --- Reset de Estilos --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Suaviza a rolagem da âncora --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Estilo Global --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f7f6;
+    padding: 20px 20px 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- Cabeçalho da Página --- */
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #d1e0e0;
+}
+
+/* --- Menu de Navegação --- */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;            /* Permite quebrar a linha de forma limpa se faltar espaço */
+    justify-content: center;    /* Centraliza os botões */
+    gap: 5px;                   /* Cria um pequeno espaço entre os botões */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    min-width: 150px;           /* Garante que o botão não fique espremido demais antes de quebrar a linha */
+}
+
+/* Estilo dos links do menu quando o tema é claro */
+nav a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e6f0fa;
+}
+
+/* Classe adicionada via JS quando a seção está visível */
+nav a.ativo {
+    color: #003366;
+    background-color: #e6f0fa;
+    border-bottom: 3px solid #ff9900;
+}
+
+/* --- Formatação das Seções --- */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos títulos das seções */
+section h3 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/*--- Estilo da linha horizontal (hr) --- */
+hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: 25px 0;
+}
+
+/* --- Formatação do formulário --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilo dos campos do formulário */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos rótulos (labels) dos campos */
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Estilo dos campos de entrada e textarea */
+.campo input, .campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Estilo quando o campo está em foco */
+.campo input:focus, .campo textarea:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Estilo das mensagens de erro */
+.erro {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 3px;
+    height: 15px;
+}
+
+/* Estilo das mensagens de sucesso */
+.sucesso {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Botão de Envio do Formulário --- */
+button {
+    background-color: #003366;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #002244;
+}
+
+/* --- Formatação do Rodapé e Âncora Topo --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn-topo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-topo:hover {
+    background-color: #cc7a00;
+}
+
+/* --- Ajustes para telas menores --- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 15px 10px;
+    }
+    nav a.ativo {
+        border-bottom: none;
+        border-left: 5px solid #ff9900;
+    }
+}
+
+/* --- Ícones e Links de Contato --- */
+.link-contato {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link-contato:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 25px; /* Espaçamento entre o botão do Whats e do LinkedIn */
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.link-social {
+    display: flex;
+    align-items: center; /* Alinha a imagem com o texto verticalmente */
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    gap: 10px; /* Espaço entre o ícone e a palavra */
+    transition: color 0.3s;
+}
+
+.link-social:hover {
+    color: #ff9900;
+}
+
+/* Define um tamanho padrão para as imagens das redes sociais */
+.icone {
+    width: 28px;            /* Define um tamanho padrão para as imagens das redes sociais */
+    height: 28px;
+    object-fit: contain;    /* Evita que a imagem fique distorcida */
+}
+
+/* --- Botão de alteração de Tema --- */
+.btn-tema {
+    margin-top: 15px;
+    background-color: #ffffff;
+    color: #003366;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-tema:hover {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+/* --- Modo Escuro (Dark Mode) --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Ajustes para seções e elementos quando o tema é escuro */
+body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode section h3 {
+    color: #66b3ff;
+    border-bottom-color: #66b3ff;
+}
+
+/* Ajustes no cabeçalho para o modo escuro */
+body.dark-mode header {
+    background-color: #0a192f;
+}
+
+/* Ajustes no menu de navegação para o modo escuro */
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+/* Estilo dos links do menu quando o tema é escuro */
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+/* Estilo dos links do menu quando o tema é escuro e estão ativos ou em hover */
+body.dark-mode nav a:hover, 
+body.dark-mode nav a.ativo {
+    background-color: #333333;
+    color: #66b3ff;
+}
+
+/* Ajustes no formulário e links de contato para o modo escuro */
+body.dark-mode .campo input, 
+body.dark-mode .campo textarea {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-mode .link-social {
+    color: #e0e0e0;
+}
+
+body.dark-mode .link-social:hover {
+    color: #66b3ff;
+}
+
+body.dark-mode .link-contato {
+    color: #66b3ff;
+}

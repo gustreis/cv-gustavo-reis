@@ -1,0 +1,164 @@
+<!--
+Gustavo Rodolfo Leite dos Reis
+RA: 5605886
+Curriculum Vitae - HTML5, CSS3 e JavaScript
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    <title>Curriculum Vitae - Gustavo Reis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="topo">
+
+    <!-- Cabeçalho do currículo, com nome e funções -->
+    <header>
+        <h1>Gustavo Rodolfo Leite dos Reis</h1>
+        <h2>Engenheiro Eletricista (CREA-SP Ativo) | Técnico em Eletrônica | Desenvolvedor</h2>
+        <button id="themeToggleBtn" class="btn-tema">🌙 Tema Escuro</button>
+    </header>
+
+    <!-- O menu de navegação com links para cada seção do currículo -->
+    <nav id="menu">
+        <ul>
+            <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+            <li><a href="#formacao" class="nav-link">Formação</a></li>
+            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal do currículo -->
+    <main>
+
+        <!-- Seção sobre mim, com uma breve descrição -->
+        <section id="sobre" class="sessao-conteudo">
+            <h3>Sobre Mim</h3>
+            <p>Profissional com sólida trajetória na área de engenharia elétrica e eletrônica (CREA-SP Ativo), com amplo conhecimento na elaboração e análise de esquemas elétricos e coordenação de projetos. Atualmente expandindo conhecimentos para a área de desenvolvimento de software e sistemas.</p>
+            <br>
+            <p>A tecnologia sempre foi uma grande paixão, a ponto de a programação de hardwares e softwares ser também um dos meus principais hobbies, o que impulsiona minha dedicação contínua aos estudos. Nas horas vagas, priorizo o tempo com a minha família — minha esposa e nossos filhos, Isabela e Pedro. Adoro dirigir e pegar a estrada com eles, seja descendo para o litoral (como São Sebastião e Caraguatatuba) ou subindo a serra para o Sul de Minas Gerais. Além disso, sou um grande entusiasta do universo automotivo, acompanhando as novidades do setor e praticando manutenção DIY (faça-você-mesmo) nas partes elétrica e mecânica.</p>
+        </section>
+
+        <!-- Seção de formação acadêmica e cursos -->
+        <section id="formacao" class="sessao-conteudo">
+            <h3>Formação Acadêmica e Cursos</h3>
+            <ul>
+                <li><strong>Análise e Desenvolvimento de Sistemas:</strong> Uninter (Início em Setembro/2025)</li>
+                <li><strong>Bacharel em Engenharia Elétrica:</strong> EEI - ETEP Faculdades (Concluído em Agosto/2012)</li>
+                <li><strong>Técnico em Eletrônica:</strong> ETEP (Concluído em Abril/2007)</li>
+                <li><strong>Idiomas:</strong> Inglês Intermediário</li>
+                <li><strong>Cursos de Aperfeiçoamento:</strong> Programação de Computadores e Dispositivos Móveis (IFSP), Manutenção Produtiva Total (SENAI), NR10 e NR35, AutoCAD Electrical e Inventor, Catia v5 R20.</li>
+            </ul>
+        </section>
+
+        <!-- Seção de experiência profissional -->
+        <section id="experiencia" class="sessao-conteudo">
+            <h3>Experiência Profissional</h3>
+            <h4>RF COM Sistemas LTDA</h4>
+            <p><strong>Cargos:</strong></p>
+            <ul>
+                <li>Engenheiro Eletricista (Agosto/2026 - Atual)</li>
+                <li>Coordenador Elétrico (Junho/2012 - Julho/2026)</li>
+                <li>Técnico em Eletrônica e Estagiário (Abril/2006 - Maio/2012)</li>
+            </ul>
+            <br>
+            <p><strong>Principais Atividades e Responsabilidades:</strong></p>
+            <p>Ampla atuação na elaboração e análise de esquemas elétricos de Unidades Móveis, além da criação, montagem e manutenção de sistemas elétricos, pneumáticos e hidráulicos. Condução de testes, integração e manutenção em equipamentos eletrônicos e de telecomunicações.</p>
+            <p>Sólida experiência em gestão de pessoas e liderança técnica, tendo supervisionado diretamente equipes compostas por cerca de 10 colaboradores e 3 líderes de frente. Atendimento estratégico e condução de projetos para clientes de alto padrão, como Exército Brasileiro, EMBRAER e TV Globo.</p>
+        </section>
+
+        <!-- Seção de portfólio -->
+        <section id="portfolio" class="sessao-conteudo">
+            <h3>Portfólio de Projetos</h3>
+            <ul>
+                <li>
+                    <strong>SuperApp (Saúde) — <em>Em Desenvolvimento</em>:</strong> 
+                    Aplicação de gerenciamento de dados de saúde desenvolvida com o framework Flutter e linguagem Dart para atividades extensionistas acadêmicas. Focada em arquitetura de widgets e integração com banco de dados.
+                </li>
+                <li>
+                    <strong>Servidor de Impressão e NAS Caseiro — <em>Em Fase de Testes</em>:</strong> 
+                    Configuração de um Raspberry Pi 3b com ambiente Linux. O escopo inicial abrange o gerenciamento de impressões em rede, com expansão planejada para armazenamento e compartilhamento de arquivos via protocolos SMB/CIFS.
+                </li>
+                <li>
+                    <strong>Módulo de Controle via Bluetooth (TCC - Engenharia Elétrica):</strong> 
+                    Desenvolvimento de um sistema de automação utilizando o microcontrolador PIC 16F877A (placa CUSCOPIC) e um conversor Bluetooth/Serial Zuchi. O projeto contemplou a criação de um aplicativo Android, desenvolvido no MIT App Inventor, para acionamento remoto de cargas (como lâmpadas e relés) a baixo custo.
+                </li>
+                <li>
+                    <strong>Robô para Inspeção de Dutos (Técnico em Eletrônica):</strong> 
+                    Projeto prático e patrocinado para inspeção visual em áreas de difícil acesso. Envolveu o desenvolvimento de um robô tracionado e controlado via cabo (imune a bloqueios de RF), equipado com câmera de inclinação/rotação ajustável e iluminação LED, transmitindo imagens em tempo real para TV e DVR.
+                </li>
+                <li>
+                    <strong>Automatização do Transporte Urbano (Técnico em Eletrônica):</strong> 
+                    Maquete de um sistema de ônibus seguidor de linha com gerenciamento eletrônico. Utilizou comunicação via LEDs infravermelhos (IR) para transmitir a identificação da linha aos pontos de parada e implementar a parada automática condicionada à solicitação do passageiro.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seção de contato com informações diretas e o formulário -->
+        <section id="contato" class="sessao-conteudo">
+            <h3>Contato</h3>
+            
+            <!-- Introdução e Links das redes sociais com ícones locais na pasta img -->
+            <p>Sinta-se à vontade para entrar em contato através das minhas redes sociais, e-mail ou telefone. Se preferir, utilize o formulário abaixo para enviar uma mensagem direta.</p>
+            <br>
+            <p><strong>Gustavo Rodolfo Leite dos Reis</strong>
+                <br><strong>E-mail:</strong> <a href="mailto:gustavo.reis@live.com" class="link-contato">gustavo.reis@live.com</a>
+                <br><strong>Tel:</strong> <a href="tel:+5512988139921" class="link-contato">(12) 98813-9921</a>
+            </p>
+            <div class="redes-sociais">
+                <a href="https://wa.me/5512988139921" target="_blank" class="link-social">
+                    <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="icone"> WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-dos-reis" target="_blank" class="link-social">
+                    <img src="img/linkedin.png" alt="Ícone do LinkedIn" class="icone"> LinkedIn
+                </a>
+            </div>
+
+            <hr>
+            
+            <!-- Formulário de contato com validação de campos com javascript -->
+            <form id="formContato" class="formulario">
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="erro" id="erroNome"></span>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone (Opcional):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                    <!-- Por ser opcional, não foi criada validação obrigatória no JS para ele, apenas a formatação com máscara -->
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    <span class="erro" id="erroEmail"></span>
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                    <span class="erro" id="erroMensagem"></span>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+                <div id="sucessoMensagem" class="sucesso"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé com informações e link para voltar ao topo -->
+    <footer>
+        <p><strong>&copy; 2026 Gustavo Rodolfo Leite dos Reis</strong><br>RA: 5605886</p>
+        <!-- Link de âncora retornando para o ID 'topo' no body -->
+        <a href="#topo" class="btn-topo">↑ Voltar ao Topo</a>
+    </footer>
+
+    <!-- Importação do arquivo de validações e efeitos JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
